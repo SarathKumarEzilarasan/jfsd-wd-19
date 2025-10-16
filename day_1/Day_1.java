@@ -1,4 +1,6 @@
-public class Demo {
+package day_1;
+
+public class Day_1 {
 
     // main method or main function
     public static void main(String[] args) {
