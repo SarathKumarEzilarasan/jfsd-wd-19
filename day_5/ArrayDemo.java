@@ -29,6 +29,27 @@ public class ArrayDemo {
 //        findMin(arr1);
 //        findSecondMax(arr1);
 //        findSecondMin(arr1);
+
+//        int[][] arr2 = new int[5][4];
+//
+////        System.out.println(arr2[0][0]);
+//        for (int i = 0; i < arr2.length; i++) {
+//            for (int j = 0; j < arr2[0].length; j++) {
+//                System.out.print(arr2[i][j]);
+//            }
+//            System.out.println();
+//        }
+
+        int[][] a1 = {
+                {-1, 4},
+                {2, 3}
+        };
+        int[][] a2 = {
+                {9, -3},
+                {6, 1}
+        };
+        matrixMul(a1, a2);
+
     }
 
     public static void findMax(int[] arr) {
@@ -65,4 +86,26 @@ public class ArrayDemo {
         System.out.println("Max value is: " + max);
         System.out.println("Second Max value is: " + secondMax);
     }
+
+    public static void matrixMul(int[][] arr1, int[][] arr2) {
+        int len = arr1.length;
+        int[][] result = new int[len][len];
+        for (int i = 0; i < len; i++) {
+            for (int j = 0; j < len; j++) {
+                for (int k = 0; k < len; k++) {
+                    result[i][j] = result[i][j] + arr1[i][k] * arr2[k][j];
+                    // result[0][1] =    0 +          arr1[0][0] * arr2[0][1]
+                    //              =    10 +         arr1[0][1] * arr2[1][1]
+                }
+            }
+        }
+
+        for (int i = 0; i < result.length; i++) {
+            for (int j = 0; j < result.length; j++) {
+                System.out.print(result[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
 }
