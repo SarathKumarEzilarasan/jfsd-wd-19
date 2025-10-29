@@ -1,14 +1,12 @@
-package day_9;
+package day_9.regex;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Anchor {
+public class LookBehind {
     public static void main(String[] args) {
-        String text = "appppp a ap";
-        String regex = "ap$";
-        // ^ -> beginning of the line
-        // $ -> end of the line
+        String text = "$100 #300";
+        String regex = "(?<!\\$)\\d+"; // (?<=\$)\d+
 
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(text);

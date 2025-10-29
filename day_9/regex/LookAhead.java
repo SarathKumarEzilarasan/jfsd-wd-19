@@ -1,16 +1,12 @@
-package day_9;
+package day_9.regex;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Quantifiers {
+public class LookAhead {
     public static void main(String[] args) {
-        String text = "appppp a app";
-        String regex = "ap+";
-        //  {n} {n,} {n,m}
-        // ? -> 0 or 1 time {0,1}
-        // * -> 0 or more times {0,}
-        // + -> 1 or more times {1,}
+        String text = "12px 14em 18px 20pt";
+        String regex = "\\d+(?!px)"; // \d+(?=px)
 
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(text);
