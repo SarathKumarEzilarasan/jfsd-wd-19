@@ -23,8 +23,6 @@ public class SetDemo {
 //        List<Integer> list = new ArrayList<>(set);
 //        System.out.println(list.get(0));
 
-
-
         Set<String> set = new TreeSet<>();
         // Hashing -> j*10(3) + o*10(2) + h*10(1) + n*10(0) --> 10002
 
