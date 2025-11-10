@@ -1,4 +1,4 @@
-package day_14.lambda.method_ref;
+package day_14.method_ref;
 
 public class Demo {
     Demo() {
