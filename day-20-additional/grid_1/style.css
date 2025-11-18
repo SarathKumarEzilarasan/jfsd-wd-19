@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav content sidebar"
+    "nav footer footer";
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: content;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+footer {
+  grid-area: footer;
+}
+
+header,
+footer,
+main,
+aside,
+nav {
+  background-color: steelblue;
+  color: #fff;
+  padding: 20px;
+  border: skyblue 1px solid;
+}
