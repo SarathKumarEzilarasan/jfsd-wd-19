@@ -1,0 +1,26 @@
+// x = 100;
+
+// console.log(x);
+
+// var y = 10;
+// var y;
+// console.log(y);
+
+// var car = "tata";
+// {
+//   var car = "bmw";
+//   console.log(car);
+// }
+
+// console.log(car);
+
+car = "bmw";
+var car;
+console.log(car);
+
+// let z = 100;
+// console.log(z);
+
+// const a = 100;
+// a = 200;
+// console.log(a);
