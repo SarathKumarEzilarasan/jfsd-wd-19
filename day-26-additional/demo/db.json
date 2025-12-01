@@ -1,0 +1,29 @@
+{
+  "db": [
+    {
+      "id": 1,
+      "checked": true,
+      "description": "Practice Java"
+    },
+    {
+      "id": 2,
+      "checked": false,
+      "description": "Practice JavaScript"
+    },
+    {
+      "id": 3,
+      "checked": true,
+      "description": "Practice HTML"
+    },
+    {
+      "id": 4,
+      "checked": false,
+      "description": "Practice CSS"
+    },
+    {
+      "id": 5,
+      "checked": false,
+      "description": "Practise Python"
+    }
+  ]
+}
