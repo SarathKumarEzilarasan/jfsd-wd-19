@@ -1,0 +1,10 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <link th:href="@{/css/demo.css}" rel="stylesheet"/>
+    </head>
+<body>
+    <a th:href="@{/variable-expression}">variable-expression</a> <br>
+    <a th:href="@{/selection-expression}">selection-expression</a> <br>
+    <a th:href="@{link-expression/{id}(id=${id})}">link with parameter</a> <br>
+</body>
+</html>

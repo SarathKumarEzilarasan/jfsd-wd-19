@@ -1,0 +1,10 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+    <div th:object="${user}">
+        <p>Name: <strong th:text="*{name}"></strong></p>
+        <p>Email: <strong th:text="*{email}"></strong></p>
+        <p>Role: <strong th:text="*{role}"></strong></p>
+        <p>Gender: <strong th:text="*{gender}"></strong></p>
+    </div>
+</body>
+</html>
